@@ -13,7 +13,7 @@ var divisions = [];
 var divisionHeight = 270;
 
 function preload(){
-  groundimg = loadImage("tower.jpg");
+  //groundimg = loadImage("tower.jpg");
 }
 function setup() { 
   createCanvas(600,650);
@@ -49,7 +49,7 @@ function setup() {
 
 function draw() {
   Engine.update(engine);
-  background(groundimg );
+  background(0 );
   
   if (frameCount % 60 === 0){
     particles.push(new Particle(random(width/2-20, width/2+20), 10, 10));
